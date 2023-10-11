@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    
+    transition: background-image 0.5s;
+}
+
+
+h1 {
+    color: #333;
+}
+
+select, input {
+    margin: 80px;
+    padding: 15px;
+}
+
+#unitContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

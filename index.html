@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+
+    <label for="unitType">Select Unit Type:</label>
+    <select id="unitType" onchange="changeUnitType()">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="volume">Volume</option>
+        <option value="temperature">Temperature</option>
+    </select>
+
+    <div id="unitContainer">
+        <label for="fromUnit">From:</label>
+        <input type="number" id="fromUnit" oninput="convertUnits()">
+
+        <label for="fromUnitType" id="fromUnitTypeLabel">meters </label>
+
+        <label for="toUnit">To:</label>
+        <input type="number" id="toUnit" readonly>
+
+        <label for="toUnitType" id="toUnitTypeLabel">centimeters </label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
